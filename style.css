@@ -58,12 +58,25 @@
   background: var(--main-gray);
 }
 
+.text-off-peak {
+  color: #8ec400;
+}
+
+.text-mid-peak {
+  color: #fbba41;
+}
+
+.text-on-peak {
+  color: #ea644d;
+}
+
 html {
   background: var(--text-gray);
 }
 
 body {
   color: var(--text-gray);
+  min-width: 320px;
 }
 
 .bg-green,
@@ -186,5 +199,68 @@ a {
 .tips div:nth-child(2) {
   border-left: 2px solid var(--main-orange);
   border-right: 2px solid var(--main-orange);
+}
+
+.pai {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.pai .bg-white {
+  border: 0;
+}
+
+.pai div:first-child {
+  -webkit-box-flex: 0.8;
+      -ms-flex: 0.8 0;
+          flex: 0.8 0;
+}
+
+.pai .flex-column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
+}
+
+@media screen and (max-width: 769px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  object:not(.icon) {
+    display: none;
+  }
+  .firstPage,
+  .calculator {
+    margin-top: 2em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .firstPage section,
+  .calculator section {
+    margin: 0;
+  }
+  .tips div {
+    margin: 1rem 0 1rem 0;
+    padding: 0 2rem 0 2rem;
+  }
+  .tips div:first-child {
+    padding-left: 2rem;
+  }
+  .tips div:nth-child(2) {
+    border-left: 2px solid var(--main-orange);
+    border-right: 2px solid var(--main-orange);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .tips div:nth-child(2) {
+    border-left: 0;
+    border-right: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
