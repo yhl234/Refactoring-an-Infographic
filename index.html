@@ -14,22 +14,29 @@
 			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
 			crossorigin="anonymous"
 		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Oswald&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
 
 		<title>Understanding Your Electricity Bill</title>
 	</head>
-	<body>
-		<!-- first page -->
-		<div>
-			<!-- top red -->
-			<div class="bg-red">
+	<body class="container p-0">
+		<!-- top red -->
+		<div class="bg-orange">
+			<div class="d-flex justify-content-between container">
 				<h1>UNDERSTANDING YOUR ELECTRICITY BILL</h1>
-				<img src="" alt="" />
+				<object data="img/slice7.svg" width="100"></object>
 			</div>
+		</div>
+		<!-- first page -->
+		<div id="" class=" firstPage container">
 			<!-- End top red -->
 			<!-- left -->
-			<div>
+			<section class="container">
 				<!-- green -->
-				<div>
+				<div class="bg-green">
 					<h3>ELECTRICITY</h3>
 					<p>
 						Most households and small businesses pay time-of-use electricity
@@ -41,7 +48,7 @@
 				</div>
 				<!-- End green -->
 				<!-- yellow -->
-				<div>
+				<div class="bg-yellow">
 					<h3>DELIVERY</h3>
 					<p>
 						This is made up of two separate costs. Both are approved by the OEB.
@@ -61,7 +68,7 @@
 				</div>
 				<!-- end yellow -->
 				<!-- Blue -->
-				<div>
+				<div class="bg-blue">
 					<h3>REGULATORY</h3>
 					<p>
 						This is made up of the costs to administer the wholesale electricity
@@ -72,7 +79,7 @@
 				</div>
 				<!-- End Blue -->
 				<!-- White -->
-				<div>
+				<div class="bg-white">
 					<h3>GLOBAL ADJUSTMENT AND ENERGY CONTRACTS</h3>
 					<p>
 						If you buy electricity from your utility, the electricity price
@@ -87,117 +94,158 @@
 					</p>
 				</div>
 				<!-- End white -->
-				<div>
-					<p>
-						<em>USE OUR ONLINE CALCULATOR</em> to help you better understand
-						your electricity bill and how to manage costs by reducing your
-						energy use or shifting it to less expensive times. Also, see what
-						your bill might look like based on a contract with an energy
-						retailer.
-					</p>
-				</div>
-				<div>
-					<p>Try it now at<a href="#"></a>OntarioEnergyBoard.ca/Consumers</p>
-				</div>
-			</div>
+			</section>
 			<!-- End left -->
-			<!-- Right -->
-			<div>
+			<!-- Bill -->
+			<section>
 				<!-- title -->
-				<div>
+				<div class="bg-orange">
 					<h2>MONTHLY BILL STATEMENT</h2>
 				</div>
 				<!-- End title -->
 				<!-- Account -->
-				<div>
+				<div class="container border">
 					<div>
-						<p>Account Number:</p>
-						<p>000 000 000 000 0000 0</p>
+						<p>
+							Account Number:<br />
+							000 000 000 000 0000 0
+						</p>
 					</div>
 					<div>
-						<p>Meter Number:</p>
-						<p>0000000</p>
+						<p>
+							Meter Number:<br />
+							0000000
+						</p>
 					</div>
 				</div>
 				<!-- End Account -->
 				<!-- Charge -->
-				<div>
-					<h2>Your Electricity Charges</h2>
-					<p></p>
-					<h3>ELECTRICITY</h3>
-					<span>x.xx</span>
+				<div class="charge container border">
+					<h2 class="h4">Your Electricity Charges</h2>
+					<div class="d-flex justify-content-between">
+						<h3 class="bg-green">ELECTRICITY</h3>
+						<span>x.xx</span>
+					</div>
 					<p>135 kWh On-peak @ X.X ¢ /kWh</p>
 					<p>127 kWh Mid-peak @ X.X ¢ /kWh</p>
 					<p>488 kWh Off-peak @ X.X ¢ /kWh</p>
-
-					<h3>DELIVERY</h3>
-					<span>x.xx</span>
-
-					<h3>REGULATORY</h3>
-					<span>x.xx</span>
-					<h3>DEBT RETIREMENT CHARGE</h3>
-					<span>0.00</span>
-					<small>Debt Retirement Charge exemption saved you $X.XX</small>
+					<div class="d-flex justify-content-between">
+						<h3 class="bg-orange-two">DELIVERY</h3>
+						<span>x.xx</span>
+					</div>
+					<div class="d-flex justify-content-between">
+						<h3 class="bg-blue">REGULATORY</h3>
+						<span>x.xx</span>
+					</div>
+					<div class="d-flex justify-content-between">
+						<h3 class="bg-white text-gray">DEBT RETIREMENT CHARGE</h3>
+						<span>0.00</span>
+					</div>
+					<p>Debt Retirement Charge exemption saved you $X.XX</p>
 				</div>
 				<!-- End charge -->
 				<!-- Total -->
-				<div>
-					<h3>Your Total Electricity Charges</h3>
-					<span>x.xx</span>
-					<p>H.S.T</p>
-					<span>x.xx</span>
-					<h2>Total Amount</h2>
-					<span>$X.XX</span>
+				<div class="total container border">
+					<div class="d-flex justify-content-between">
+						<p class="text-gray">Your Total Electricity Charges</p>
+						<span>x.xx</span>
+					</div>
+					<div class="d-flex justify-content-between">
+						<p>H.S.T</p>
+						<span>x.xx</span>
+					</div>
+					<div class="d-flex justify-content-between bg-gray mb-3">
+						<h2 class="h4">Total Amount</h2>
+						<span>$X.XX</span>
+					</div>
 					<div>
-						<p>
+						<p class="border p-2">
 							The Debt Retirement Charge was removed for certain residential
-							consumption after Dec. 31, 2015. Learn more at .
+							consumption after Dec. 31, 2015. Learn more at
+							<a href="#">Ontario.ca/DRC </a>
+							.
 						</p>
 					</div>
 				</div>
 				<!-- End Total -->
-				<p>
-					TO LEARN MORE ABOUT THE ITEMS ON YOUR BILL, VISIT
-					<a href="#">OntarioEnergyBoard.ca/Consumers</a>
-				</p>
-				<div>
-					<img src="" alt="" />
-					<img src="" alt="" />
-					<img src="" alt="" />
-					<img src="" alt="" />
-					<h2>BILL CALCULATOR</h2>
-					<p>Use our calculator to estimate</p>
-					<p>
-						your monthly <em> ELECTRICITY </em>and <em>NATURAL GAS BILLS.</em>
+				<div class="mt-3 d-flex">
+					<object data="img/slice8.svg" height="20" type=""></object>
+					<p class="text-orange ml-2">
+						TO LEARN MORE ABOUT THE ITEMS ON YOUR BILL, VISIT
+						<a href="#">OntarioEnergyBoard.ca/Consumers</a>
 					</p>
 				</div>
-			</div>
-			<!-- End Right -->
+			</section>
+			<!-- End Bill -->
 		</div>
 		<!-- End First page -->
+		<!-- calculator -->
+		<div class="calculator container mt-0">
+			<section class="container">
+				<div>
+					<p>
+						<em class="text-orange">USE OUR ONLINE CALCULATOR</em> to help you
+						better understand your electricity bill and how to manage costs by
+						reducing your energy use or shifting it to less expensive times.
+						Also, see what your bill might look like based on a contract with an
+						energy retailer.
+					</p>
+				</div>
+				<div>
+					<p>Try it now at<a href="#">OntarioEnergyBoard.ca/Consumers</a></p>
+				</div>
+			</section>
+			<section class="bill-calculator d-flex container">
+				<object data="img/slice6.svg" height="80"></object>
+				<div class="ml-3">
+					<h2>
+						<span class="text-blue">BILL</span>
+						<span class="text-orange">CALCULATOR</span>
+					</h2>
+					<p>
+						Use our calculator to estimate your monthly
+						<em class="text-orange"> ELECTRICITY </em>and
+						<em class="text-blue">NATURAL GAS BILLS.</em>
+					</p>
+				</div>
+			</section>
+		</div>
+		<!-- End calculator -->
 		<!-- second page -->
 		<div>
 			<!-- top red -->
-			<div class="bg-red">
-				<div>
+			<div class="bg-orange">
+				<div class="d-flex justify-content-between container">
 					<h1>UNDERSTANDING YOUR ELECTRICITY BILL</h1>
-					<img src="" alt="" />
+					<object data="img/slice7.svg" width="100"></object>
 				</div>
-				<div>
-					<h2>BE AN INFORMED ENERGY CONSUMER. WE CAN HELP.</h2>
-					<p>
-						For information on a range of topics visit<a href="#"
-							>OntarioEnergyBoard.ca/Consumers</a
-						>
-					</p>
-					<p>Contact<a href="#">CONSUMER RELATIONS</a></p>
-					<p><span>1-87 7-632-2727</span>(toll-free within Ontario)</p>
-					<p>
-						<span>41 6-3 1 4-2455</span>(within Greater Toronto Area or from
-						outside Canada)
-					</p>
-					<a href="#">ConsumerRelations@OntarioEnergyBoard.ca</a>
-					<a href="#">@ConsumerRelations@OntarioEnergyBoard.ca</a>
+				<div class="d-flex mt-5 mb-5 ">
+					<object data="img/slice3.svg" width="80" height="80"></object>
+					<div class="">
+						<h2>BE AN INFORMED ENERGY CONSUMER. WE CAN HELP.</h2>
+						<p>
+							For information on a range of topics visit
+							<a href="#">OntarioEnergyBoard.ca/Consumers</a>
+						</p>
+						<p>Contact <a href="#">CONSUMER RELATIONS</a></p>
+						<p><span>1-87 7-632-2727</span>(toll-free within Ontario)</p>
+						<p>
+							<span>41 6-3 1 4-2455</span>(within Greater Toronto Area or from
+							outside Canada)
+						</p>
+						<a href="#">ConsumerRelations@OntarioEnergyBoard.ca</a>
+						<div>
+							<object
+								data="img/iconmonstr-twitter-1.svg"
+								type=""
+								width="24"
+								height="24"
+							></object>
+							<a href="#">@OntarioEnergyBoard.ca</a>
+						</div>
+					</div>
+				</div>
+				<div class="container">
 					<p>
 						The Ontario Energy Board is an independent and impartial public
 						regulatory agency. We make decisions that serve the public interest.
@@ -205,7 +253,7 @@
 						sector that provides you with reliable energy services that are cost
 						effective.
 					</p>
-					<p>
+					<p class="mt-3">
 						Ce document est aussi disponible en français. Visit our website or
 						contact Consumer Relations.
 					</p>
@@ -213,54 +261,66 @@
 			</div>
 			<!-- End top red -->
 			<!-- White -->
-			<div>
-				<h2></h2>
-				<p><em></em><em></em><em></em></p>
-				<p>
-					Your smart meter tells your utility exactly how much power you use and
-					when you use it. With this information, your utility charges you for
-					the amount of power you use at off-peak, mid-peak and on-peak times.
-				</p>
-				<p>REASONS FOR DIFFERENT PRICES</p>
-				<p>
-					<em>WHEN DEMAND IS LOW</em>and fewer people are using power,
-					lower-cost electricity is available from sources like nuclear and
-					large hydroelectric systems.
-				</p>
-				<p>
-					<em>WHEN DEMAND RISES</em>during the day, the province’s supply of
-					lower-cost electricity is used up, and more expensive sources need to
-					be used.
-				</p>
-				<!-- pai -->
-				<div></div>
-				<!-- End pai -->
-				<h2>MANAGING YOUR ELECTRICITY USE</h2>
-				<p>
-					Did you know about 60% of energy costs in a typical home are spent on
-					heating and cooling? To manage electricity use, try conserving power
-					and shifting some usage to evenings and weekends. Visit these websites
-					for more tips:
-				</p>
+			<div class="d-flex container mt-5">
+				<object data="img/slice2.svg" width="80" height="80"></object>
 				<div>
-					<p>10 Smart Meter Lane</p>
-					<a href="#">ieso.ca/house</a>
-				</div>
-				<div>
-					<p>saveONenergy</p>
-					<a href="#">saveonenergy.ca</a>
-				</div>
-				<div>
-					<p>Ministry of Energy</p>
-					<a href="#">ontario.ca/energy</a>
+					<h2>TIME-OF-USE ELECTRICITY PRICES</h2>
+					<p>
+						Households and small businesses in Ontario pay time-of-use prices
+						for electricity that change according to the and . The peak periods
+						also change by .
+						<em> TIME OF DAY </em>DAY OF THE WEEK <em></em><em>SEASON</em>
+					</p>
+					<p>
+						Your smart meter tells your utility exactly how much power you use
+						and when you use it. With this information, your utility charges you
+						for the amount of power you use at off-peak, mid-peak and on-peak
+						times.
+					</p>
+					<h3 class="mt-3 mb-3">REASONS FOR DIFFERENT PRICES</h3>
+					<p>
+						<em>WHEN DEMAND IS LOW</em> and fewer people are using power,
+						lower-cost electricity is available from sources like nuclear and
+						large hydroelectric systems.
+					</p>
+					<p>
+						<em>WHEN DEMAND RISES</em> during the day, the province’s supply of
+						lower-cost electricity is used up, and more expensive sources need
+						to be used.
+					</p>
 				</div>
 			</div>
 			<!-- End White -->
+			<!-- pai -->
+			<div></div>
+			<!-- End pai -->
+			<div class="d-flex container mt-5">
+				<object data="img/slice2.svg" width="80" height="80"></object>
+				<div>
+					<h2>MANAGING YOUR ELECTRICITY USE</h2>
+					<p>
+						Did you know about 60% of energy costs in a typical home are spent
+						on heating and cooling? To manage electricity use, try conserving
+						power and shifting some usage to evenings and weekends. Visit these
+						websites for more tips:
+					</p>
+					<div class="d-flex tips">
+						<div>
+							<p>10 Smart Meter Lane</p>
+							<a href="#">ieso.ca/house</a>
+						</div>
+						<div>
+							<p>saveONenergy</p>
+							<a href="#">saveonenergy.ca</a>
+						</div>
+						<div>
+							<p>Ministry of Energy</p>
+							<a href="#">ontario.ca/energy</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<footer>
-			<p>Ontario Energy Board</p>
-			<img src="" alt="" />
-		</footer>
 		<script
 			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

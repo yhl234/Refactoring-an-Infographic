@@ -1,0 +1,190 @@
+:root {
+  --main-orange: #f0674f;
+  --main-orange-two: #feefde;
+  --main-green: #eef7d9;
+  --main-yellow: #ffedcd;
+  --main-blue: #daf4fa;
+  --main-gray: #e6e5e6;
+  --text-gray: #807f83;
+  --text-blue: #1895d1;
+  --text-gray-two: #58595b;
+}
+
+.bg-orange {
+  background: var(--main-orange);
+  padding: 1em;
+  color: #fff;
+}
+
+.bg-orange a,
+.bg-orange span {
+  color: #fff;
+  font-weight: bold;
+}
+
+.bg-orange p {
+  color: #ffffffbe;
+}
+
+.bg-orange-two {
+  background: var(--main-orange-two);
+}
+
+.text-orange {
+  color: var(--main-orange);
+}
+
+.bg-green {
+  background: var(--main-green);
+}
+
+.bg-yellow {
+  background: var(--main-yellow);
+}
+
+.bg-blue {
+  background: var(--main-blue);
+}
+
+.text-blue {
+  color: var(--text-blue);
+}
+
+.bg-white {
+  border: 1px solid var(--text-gray);
+}
+
+.bg-gray {
+  background: var(--main-gray);
+}
+
+html {
+  background: var(--text-gray);
+}
+
+body {
+  color: var(--text-gray);
+}
+
+.bg-green,
+.bg-yellow,
+.bg-blue,
+.bg-white {
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.bg-green h3,
+.bg-green h4,
+.bg-yellow h3,
+.bg-yellow h4,
+.bg-blue h3,
+.bg-blue h4,
+.bg-white h3,
+.bg-white h4 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h1,
+h2:not(.h4) {
+  font-family: "Oswald", sans-serif;
+}
+
+h3,
+h4 {
+  color: var(--main-orange);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+p {
+  margin: 0;
+}
+
+p:last-of-type {
+  margin-bottom: 0.5rem;
+}
+
+em {
+  font-style: normal;
+  font-weight: bold;
+}
+
+a {
+  color: var(--text-blue);
+}
+
+.firstPage,
+.calculator {
+  margin-top: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.firstPage section,
+.calculator section {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+  margin: 0 1rem 1rem 1rem;
+}
+
+.border {
+  border-collapse: collapse;
+}
+
+.charge .bg-green,
+.charge .bg-blue,
+.charge .bg-white,
+.charge .bg-orange-two {
+  border: 0;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  margin-bottom: 5px;
+}
+
+.charge h3,
+.total h3 {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 0;
+          flex: 3 0;
+}
+
+.charge span,
+.total span {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  text-align: right;
+}
+
+.bill-calculator h2 {
+  margin: 0;
+}
+
+.tips div {
+  margin: 1rem 0 1rem 0;
+  padding: 0 2rem 0 2rem;
+}
+
+.tips div:first-child {
+  padding-left: 0;
+}
+
+.tips div:nth-child(2) {
+  border-left: 2px solid var(--main-orange);
+  border-right: 2px solid var(--main-orange);
+}
+/*# sourceMappingURL=style.css.map */
